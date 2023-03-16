@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Variables and Operators</title>
+</head>
+<body>
+	<h1>JavaScript Variables and Operators</h1>
+	<p id="output"></p>
+
+	<script>
+		// Declare variables of different data types
+		let num1 = 10;
+		let num2 = 5.5;
+		let str1 = "Hello";
+		let bool1 = true;
+
+		// Perform arithmetic operations
+		let sum = num1 + num2;
+		let difference = num1 - num2;
+		let product = num1 * num2;
+		let quotient = num1 / num2;
+
+		// Perform comparison and logical operations
+		let greaterThan = num1 > num2;
+		let lessThan = num1 < num2;
+		let equal = num1 === num2;
+		let notEqual = num1 !== num2;
+		let and = bool1 && (num1 > num2);
+		let or = bool1 || (num1 < num2);
+
+		// Display results on the web page
+		document.getElementById("output").innerHTML = "num1: " + num1 + "<br>" +
+													 "num2: " + num2 + "<br>" +
+													 "str1: " + str1 + "<br>" +
+													 "bool1: " + bool1 + "<br><br>" +
+													 "num1 + num2 = " + sum + "<br>" +
+													 "num1 - num2 = " + difference + "<br>" +
+													 "num1 * num2 = " + product + "<br>" +
+													 "num1 / num2 = " + quotient + "<br><br>" +
+													 "num1 > num2 = " + greaterThan + "<br>" +
+													 "num1 < num2 = " + lessThan + "<br>" +
+													 "num1 === num2 = " + equal + "<br>" +
+													 "num1 !== num2 = " + notEqual + "<br>" +
+													 "bool1 && (num1 > num2) = " + and + "<br>" +
+													 "bool1 || (num1 < num2) = " + or;
+	</script>
+</body>
+</html>
